@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+#wrapper {
+    background-color: #ddd;
+    width: 1000px;
+    margin: 0 auto;
+}
+#header {
+    border: 1px solid #aaa;
+}
+#header div {
+    float: left;
+    margin: 10px;
+}
+#header #logo img {
+    display: block;
+    padding: 10px;
+    width: 250px;
+}
+#nav ul li {
+    float: left;
+    padding: 5px;
+    margin-right: 5px;
+    list-style-type: none;
+    background-color: limegreen;
+}
+#nav ul li:hover {
+    background-color: green;
+}
+#nav ul li a {
+    text-decoration: none;
+}
+#main {
+    clear: both;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+table {
+    width: 100%;
+}
+table, th, tr, td {
+    border: 1px solid black;
+    text-align: center;
+}
+#article1 {
+    border: 1px solid #aaa;
+    width: 475px;
+    float: left;
+    padding: 10px;
+}
+#article2 {
+    border: 1px solid #aaa;
+    width: 475px;
+    float: right;
+    padding: 10px;
+}
+.clear {
+    clear: both;
+}
+#footer {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/*-----------forma------------*/
+
+#forma {
+    border: 1px solid red;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+#forma div {
+    text-align: center;
+    margin: 10px;
+}

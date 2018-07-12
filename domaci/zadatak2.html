@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>zadatak2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div id="logo">
+            <img src="images/dog.jpg" alt="slikaLogo">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="zadatak1.html">zadatak 1 - pocetna</a></li>
+                <li><a href="zadatak2.html">zadatak 2 - forma</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <form action="#" method="get" id="forma">
+            <div>
+                <label for="ime">Unesite ime: </label> <input id="ime" type="text" placeholder="ime">
+            </div>
+            <div>
+                <label for="prezime">Unesite prezime: </label> <input id="prezime" type="text" placeholder="prezime">
+            </div>
+            <div>
+                <label>strost:</label>
+                <select id="padajuci">
+                    <option value="1"><18 godina</option>
+                    <option value="2">18-35 godina</option>
+                    <option value="3">>35 godina</option>
+                </select>
+            </div>
+            <div>
+                <p>izaberite pol:</p>
+                <input id="m" type="radio" name="gender" value="male"><label for="m">Muski</label><br>
+                <input id="z" type="radio" name="gender" value="female"><label for="z">Zenski</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="check"><label for="check">Da li zelite da se pretplatite za newsletter</label>
+            </div>
+            <div>
+                <input type="submit" value="Posalji">
+            </div>
+        </form>
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+        <p>telefon: 000 / 0000 000</p>
+        <p>adresa</p>
+    </div>
+</div>
+</body>
+</html>

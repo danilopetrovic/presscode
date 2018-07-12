@@ -1,0 +1,17 @@
+body {
+    background-color: #888;
+    background-image: url("connectwork.png");
+}
+jumbotron {
+    background-image: url("connectwork.png") !important;
+}
+div, header, footer {
+    background-color: #DDD !important;
+}
+header {
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}
