@@ -1,5 +1,5 @@
 /*
-magenta boja #FF8C17
+magenta boja #FF00FF
 druga boja #FF8C17
 */
 
@@ -22,7 +22,7 @@ a {
     transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-    color: #18d36e;
+    color: #FF00FF;
     outline: none;
     text-decoration: none;
 }
@@ -732,11 +732,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-    padding: 60px 0;
+    /*padding: 60px 0;*/
 }
 #portfolio #portfolio-flters {
     padding: 0;
-    margin: 5px 0 35px 0;
+    margin: 5px 0 0px 0;
     list-style: none;
     text-align: center;
 }
@@ -1044,7 +1044,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     cursor: pointer;
 }
 #contact .form button[type="submit"]:hover {
-    background: #13a456;
+    background: #FF00FF;
 }
 /*--------------------------------------------------------------
 # Footer
@@ -1077,7 +1077,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 3px;
-    border-left: 4px solid #18d26e;
+    border-left: 4px solid #FF00FF;
 }
 #footer .footer-top .footer-info p {
     font-size: 14px;
@@ -1120,37 +1120,37 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 2px;
 }
 /*#footer .footer-top h4::before {*/
-    /*right: 0;*/
-    /*background: #555;*/
+/*right: 0;*/
+/*background: #555;*/
 /*}*/
 /*#footer .footer-top h4::after {*/
-    /*background: #18d26e;*/
-    /*width: 60px;*/
+/*background: #18d26e;*/
+/*width: 60px;*/
 /*}*/
 /*#footer .footer-top .footer-links {*/
-    /*margin-bottom: 30px;*/
+/*margin-bottom: 30px;*/
 /*}*/
 /*#footer .footer-top .footer-links ul {*/
-    /*list-style: none;*/
-    /*padding: 0;*/
-    /*margin: 0;*/
+/*list-style: none;*/
+/*padding: 0;*/
+/*margin: 0;*/
 /*}*/
 /*#footer .footer-top .footer-links ul i {*/
-    /*padding-right: 8px;*/
-    /*color: #ddd;*/
+/*padding-right: 8px;*/
+/*color: #ddd;*/
 /*}*/
 /*#footer .footer-top .footer-links ul li {*/
-    /*border-bottom: 1px solid #333;*/
-    /*padding: 10px 0;*/
+/*border-bottom: 1px solid #333;*/
+/*padding: 10px 0;*/
 /*}*/
 /*#footer .footer-top .footer-links ul li:first-child {*/
-    /*padding-top: 0;*/
+/*padding-top: 0;*/
 /*}*/
 /*#footer .footer-top .footer-links ul a {*/
-    /*color: #eee;*/
+/*color: #eee;*/
 /*}*/
 /*#footer .footer-top .footer-links ul a:hover {*/
-    /*color: #18d26e;*/
+/*color: #18d26e;*/
 /*}*/
 #footer .footer-top .footer-contact {
     margin-bottom: 30px;
@@ -1173,4 +1173,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 #detaljnije {
     text-align: right;
     font-size: 30px;
+}
+/*==================== tabela cenovnik ==================*/
+#tabeleCenovnici {
+    margin: 100px auto 100px;
+}
+#tabeleCenovnici p {
+    font-weight: bold;
+    margin-bottom: 0;
+    /*text-align: center;*/
+}
+table {
+    width: 100%;
+    margin: 0 0 50px 0;
+}
+th, td, tr {
+    border: 1px solid gray;
+    text-align: center;
+}
+#okrenut {
+    transform: rotate(-90deg);
+    vertical-align: center;
+    text-align: center;
+    width: 50px;
+}
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 0.8em;
+    }
 }
