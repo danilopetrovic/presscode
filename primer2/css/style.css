@@ -93,9 +93,16 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: -5px;
 }
-@media (max-width: 865px) {
+@media (max-width: 950px) {
     #header #logo img {
-        width: 180px;
+        width: 220px;
+        position: relative;
+        top: 0;
+    }
+}
+@media (max-width: 850px) {
+    #header #logo img {
+        width: 150px;
     }
 }
 @media (min-width: 1024px) {

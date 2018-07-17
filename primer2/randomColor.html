@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RandomColor</title>
+</head>
+<body>
+<div>
+    <p id="paragraf" style="color: blue">random color generator:&nbsp;</p>
+</div>
+<script>
+    var items = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E'];
+
+
+    function oneItem() {
+        var item = items[Math.floor(Math.random() * items.length)];
+        // console.log(item);
+        return item;
+    }
+
+    function moreItems() {
+        var color = '';
+        for (let i = 0; i < 6 ;i++) {
+            color = color + oneItem();
+        }
+        return '#' + color;
+    }
+    var paragraf = document.getElementById('paragraf');
+    paragraf.innerText = paragraf.innerText + moreItems();
+    paragraf.style.color = moreItems();
+</script>
+</body>
+</html>
