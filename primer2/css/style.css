@@ -1215,3 +1215,7 @@ th, td, tr {
 .naseUsluge img {
     border-radius: 3px;
 }
+.naseUsluge h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+}
