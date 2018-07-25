@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RandomColor</title>
+</head>
+<style>
+    #paragraf {
+        color: white;
+        background-color: black;
+        width: 50vw;
+        height: 30vh;
+        transition: background-color 4s;
+    }
+</style>
+<body>
+<div>
+    <p id="paragraf">random color generator: black</p>
+</div>
+<script>
+    var items = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+
+    function oneItem() {
+        var item = items[Math.floor(Math.random() * items.length)];
+        // console.log(item);
+        return item;
+    }
+
+    function moreItems() {
+        var color = '';
+        for (let i = 0; i < 6; i++) {
+            color = color + oneItem();
+        }
+        console.log('#' + color);
+        return '#' + color;
+    }
+
+    var paragraf = document.getElementById('paragraf');
+
+    setInterval(function () {
+        var intervalBoja = moreItems();
+        paragraf.style.backgroundColor = intervalBoja;
+        paragraf.style.color = intervalBoja;
+        paragraf.innerText = 'random color generator: ' + intervalBoja;
+    }, 2000);
+</script>
+</body>
+</html>
