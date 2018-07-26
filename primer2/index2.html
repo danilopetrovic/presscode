@@ -564,20 +564,28 @@
     </div>
 </footer><!-- #footer -->
 <script>
-    var items = ['cyan', 'magenta', 'yellow'];
+    var items = ['white', 'cyan', 'magenta', 'yellow'];
 
     var bojaPoRedu = 0;
+    var i = 0;
 
     var logoSlika = document.getElementById('logoSlika');
 
-    setInterval(function () {
+    var vrtenjeBoja = setInterval(function vrsteBoja() {
+        console.log(i += 1);
         if (bojaPoRedu == items.length) {
             bojaPoRedu = 0;
+            clearInterval(vrtenjeBoja);
+            setTimeout(function () {
+                console.log('usao u setTimeout');
+                vrtenjeBoja;
+                console.log('usao u setTimeout');
+            }, 1000);
         }
         console.log(items[bojaPoRedu]);
         logoSlika.style.backgroundColor = items[bojaPoRedu];
         bojaPoRedu += 1;
-    }, 2000);
+    }, 400);
 </script>
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

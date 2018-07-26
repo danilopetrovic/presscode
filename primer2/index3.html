@@ -42,6 +42,28 @@
 <!--==========================
   Header
 ============================-->
+
+<style>
+    #logoSlika {
+        background: linear-gradient(to right, white 0, white 190px, magenta 200px, magenta 270px, cyan 270px, cyan 340px, yellow 340px, yellow 410px, white 420px, white 1500px);
+        background-size: 1500px;
+        animation: 10s linear slidein infinite ;
+    }
+    @keyframes slidein {
+        from {
+            background-position: 0 0;
+        }
+        to {
+            background-position: -1500px 0;
+        }
+    }
+
+    @media (max-width: 850px) {
+        #logoSlika {
+            animation: 7s linear slidein infinite ;
+        }
+    }
+</style>
 <header id="header">
     <div class="container-fluid">
 
@@ -563,22 +585,6 @@
         </div>
     </div>
 </footer><!-- #footer -->
-<script>
-    var items = ['cyan', 'magenta', 'yellow'];
-
-    var bojaPoRedu = 0;
-
-    var logoSlika = document.getElementById('logoSlika');
-
-    setInterval(function () {
-        if (bojaPoRedu == items.length) {
-            bojaPoRedu = 0;
-        }
-        console.log(items[bojaPoRedu]);
-        logoSlika.style.backgroundColor = items[bojaPoRedu];
-        bojaPoRedu += 1;
-    }, 2000);
-</script>
 
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RandomColor</title>
+</head>
+<style>
+    div {
+        width: 50vw;
+        height: 90px;
+        position: relative;
+    }
+    #paragraf {
+        color: white;
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
+        transition: background-color 0.4s;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+<body>
+<div>
+    <p id="paragraf">random color generator: black</p>
+    <img src="primer2/img/logo/logo_danilo3.png" alt="logo" width="100%">
+</div>
+<script>
+    var items = ['cyan', 'magenta', 'yellow'];
+
+    var bojaPoRedu = 0;
+
+    var paragraf = document.getElementById('paragraf');
+
+    setInterval(function () {
+        if (bojaPoRedu == items.length) {
+            bojaPoRedu = 0;
+        }
+        console.log(items[bojaPoRedu]);
+        paragraf.style.backgroundColor = items[bojaPoRedu];
+        paragraf.style.color = items[bojaPoRedu];
+        paragraf.innerText = 'random color generator: ' + items[bojaPoRedu];
+        bojaPoRedu += 1;
+    }, 500);
+</script>
+</body>
+</html>
