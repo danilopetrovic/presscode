@@ -22,7 +22,7 @@ a {
     transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-    color: #FF00FF;
+    color: #FF8C17;
     outline: none;
     text-decoration: none;
 }
@@ -140,6 +140,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 /*--------------------------------------------------------------
 # Intro Section
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Animacija Logoa
+--------------------------------------------------------------*/
+#logo a img {
+    background: linear-gradient(to right,
+    white 0, white 190px,
+    magenta 200px, magenta 270px,
+        /*black 269px, black 270px,*/
+    cyan 270px, cyan 340px,
+        /*black 340px, black 341px,*/
+    yellow 340px, yellow 410px,
+    white 420px, white 1500px);
+    background-size: 1500px;
+    animation: 10s linear slidein infinite ;
+}
+@keyframes slidein {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1500px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    #logo a img {
+        animation: 7s linear slidein infinite ;
+    }
+}
+/*--------------------------------------------------------------
+# Kraj Animacija Logoa
 --------------------------------------------------------------*/
 #intro {
     display: table;
@@ -626,6 +659,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #000;
 }
 #about .about-col h2 a:hover {
+    color: #FF8C17;
+}
+#about .about-col:hover a {
     color: #FF8C17;
 }
 #about .about-col p {
