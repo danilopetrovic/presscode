@@ -157,10 +157,9 @@
       Featured Services Section
     ============================-->
     <section id="featured-services">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
-                <img src="img/PRESSCoDe.jpg" alt="" style="width: 100px;display: block;margin: 5px auto;">
-
+                <img src="img/PRESSCoDe.jpg" alt="" id="PressCodeMalaSlicica">
             </div>
         </div>
     </section><!-- #featured-services -->
@@ -173,7 +172,7 @@
 
             <header class="section-header">
                 <h3>Naše Usluge</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </header>
 
             <div class="row about-cols">
@@ -254,21 +253,24 @@
                 </div>
 
                 <script>
-                    var images = [], x = -1;
-                    images[0] = "img/opisi/image1.jpg";
-                    images[1] = "img/opisi/image2.jpg";
-                    images[2] = "img/opisi/image3.jpg";
-                    images[3] = "img/opisi/image4.jpg";
-                    images[4] = "img/opisi/image5.jpg";
+                    var images = [
+                        "img/opisi/image1.jpg",
+                        "img/opisi/image2.jpg",
+                        "img/opisi/image3.jpg",
+                        "img/opisi/image4.jpg",
+                        "img/opisi/image5.jpg",
+                    ];
+                    var x = -1;
+
                     function displayNextImage() {
                         x = (x === images.length - 1) ? 0 : x + 1;
                         document.getElementById("img").src = images[x];
                     }
 
-                    function displayPreviousImage() {
-                        x = (x <= 0) ? images.length - 1 : x - 1;
-                        document.getElementById("img").src = images[x];
-                    }
+                    // function displayPreviousImage() {
+                    //     x = (x <= 0) ? images.length - 1 : x - 1;
+                    //     document.getElementById("img").src = images[x];
+                    // }
 
                     function startTimer() {
                         setInterval(displayNextImage, 1500);

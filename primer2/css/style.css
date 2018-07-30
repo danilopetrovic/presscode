@@ -149,13 +149,11 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to right,
     white 0, white 190px,
     magenta 200px, magenta 270px,
-        /*black 269px, black 270px,*/
-    cyan 270px, cyan 340px,
-        /*black 340px, black 341px,*/
-    yellow 340px, yellow 410px,
+        /*black 269px, black 270px,*/ cyan 270px, cyan 340px,
+        /*black 340px, black 341px,*/ yellow 340px, yellow 410px,
     white 420px, white 1500px);
     background-size: 1500px;
-    animation: 10s linear slidein infinite ;
+    animation: 10s linear slidein infinite;
 }
 @keyframes slidein {
     from {
@@ -165,10 +163,9 @@ h1, h2, h3, h4, h5, h6 {
         background-position: -1500px 0;
     }
 }
-
 @media (max-width: 850px) {
     #logo a img {
-        animation: 7s linear slidein infinite ;
+        animation: 7s linear slidein infinite;
     }
 }
 /*--------------------------------------------------------------
@@ -1257,3 +1254,46 @@ th, td, tr {
     text-align: center;
     margin-top: 0.5rem;
 }
+/*press code mala slicica se pomera*/
+#PressCodeMalaSlicica {
+    width: 100px;
+    display: block;
+    margin: 5px;
+    position: relative;
+    left: -0px;
+    animation: 8s linear klizi infinite;
+}
+@keyframes klizi {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        left: 90%;
+        opacity: 0;
+    }
+}
+@media (max-width: 768px) {
+    #PressCodeMalaSlicica {
+        width: 70px;
+        animation: 5s linear klizi infinite;
+    }
+    @keyframes klizi {
+        80% {
+            opacity: 1;
+        }
+
+        100% {
+            left: 75%;
+            opacity: 0;
+        }
+    }
+}
+/*press code mala slicica se pomera kraj*/
