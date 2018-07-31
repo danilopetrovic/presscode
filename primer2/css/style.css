@@ -621,19 +621,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-col .icon {
     width: 64px;
     height: 64px;
-    padding-top: 8px;
+    padding-top: 12px;
     text-align: center;
     position: absolute;
     background-color: #FF8C17;
     border-radius: 50%;
-    text-align: center;
     border: 4px solid #fff;
     left: calc(50% - 32px);
     bottom: -30px;
     transition: 0.3s;
 }
 #about .about-col i {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 1;
     color: #fff;
     transition: 0.3s;
@@ -1256,7 +1255,7 @@ th, td, tr {
 }
 /*press code mala slicica se pomera*/
 #PressCodeMalaSlicica {
-    width: 100px;
+    height: 38px;
     display: block;
     margin: 5px;
     position: relative;
@@ -1291,9 +1290,17 @@ th, td, tr {
         }
 
         100% {
-            left: 75%;
+            left: 70%;
             opacity: 0;
         }
     }
 }
 /*press code mala slicica se pomera kraj*/
+#galerijaLink h3 {
+    color: #111;
+    transition: 0.5s;
+}
+#galerijaLink:hover h3 {
+    color: #FF8C17;
+    transition: 0.5s;
+}
