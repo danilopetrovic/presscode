@@ -1218,6 +1218,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 30px;
 }
 /*==================== tabela cenovnik ==================*/
+
+#legendaTabela {
+    width: 40%;
+    margin: 10px 0;
+}
+#legendaTabela td:first-child {
+    width: 30px;
+}
+@media (max-width: 768px) {
+    #legendaTabela {
+        width: 70%;
+    }
+}
+
 #tabeleCenovnici {
     margin: 0px auto 100px;
 }
