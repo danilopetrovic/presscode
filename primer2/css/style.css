@@ -1310,11 +1310,21 @@ th, td, tr {
     }
 }
 /*press code mala slicica se pomera kraj*/
-#galerijaLink h3 {
+.galerijaLinkovi h3 {
     color: #111;
     transition: 0.5s;
 }
-#galerijaLink:hover h3 {
+.galerijaLinkovi:hover h3 {
     color: #FF8C17;
     transition: 0.5s;
+}
+
+#kalkulator > div > div {
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    #kalkulator > div > div {
+        margin-top: 3px;
+    }
 }
