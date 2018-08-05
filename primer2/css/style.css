@@ -811,7 +811,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #portfolio .portfolio-item {
     position: relative;
-    height: 210px; /*velicina izmedju slika*/
+    height: 190px; /*velicina izmedju slika*/
     overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -822,8 +822,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio .portfolio-item figure {
     background: #000;
     overflow: hidden;
-    height: 200px; /*velicina slike*/
-    position: relative;
+    height: 185px; /*velicina slike*/
+    /*position: relative;*/
     border-radius: 4px;
     margin: 0;
 }
@@ -1231,7 +1231,6 @@ body.mobile-nav-active #mobile-nav-toggle {
         width: 70%;
     }
 }
-
 #tabeleCenovnici {
     margin: 0px auto 100px;
 }
@@ -1318,13 +1317,16 @@ th, td, tr {
     color: #FF8C17;
     transition: 0.5s;
 }
-
 #kalkulator > div > div {
     margin-top: 5px;
 }
-
 @media (max-width: 768px) {
     #kalkulator > div > div {
         margin-top: 3px;
     }
+}
+
+
+.menu-active a {
+    color: #FF8C17 !important;
 }
