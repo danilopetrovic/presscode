@@ -1564,3 +1564,23 @@ th, td, tr {
 .menu-active a {
     color: #FF8C17 !important;
 }
+
+/*kontakt 3d mapa*/
+#mapa3d {
+    position: relative;
+}
+#mapa3d img {
+    border: none;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+#mapa3d:hover img {
+    border: 2px solid #FF8C17;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+#mapa3d:active img {
+    border: 2px solid #FF8C17;
+    opacity: 1;
+}
+/*kontakt 3d mapa kraj*/
