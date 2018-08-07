@@ -19,8 +19,8 @@
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li><a href="index.php#intro">Početna</a></li>
-                <li class="menu-active"><a href="">Naše Usluge</a></li>
+                <li><a href="index.php">Početna</a></li>
+                <li class="menu-active"><a href="#portfolio">Naše Usluge</a></li>
                 <li><a href="galerija.php">Galerija</a></li>
                 <!--<li><a href="index.php#team">Naš tim</a></li>-->
                 <li><a href="cenovnik.php">Cenovnik</a></li>
@@ -101,7 +101,7 @@
 
             <!--<button type="button" onclick="displayPreviousImage()" style="display: none">Previous</button>-->
             <!--<button type="button" onclick="displayNextImage()" style="display: none">Next</button>-->
-            <hr>
+            <hr style="margin-bottom: 0">
 
             <script>
                 var images = [

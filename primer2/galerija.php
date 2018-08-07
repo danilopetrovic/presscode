@@ -19,9 +19,9 @@
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li><a href="index.php#intro">Početna</a></li>
+                <li><a href="index.php">Početna</a></li>
                 <li><a href="naseUsluge.php">Naše Usluge</a></li>
-                <li class="menu-active"><a href="">Galerija</a></li>
+                <li class="menu-active"><a href="#portfolio">Galerija</a></li>
                 <!--<li><a href="index.php#team">Naš tim</a></li>-->
                 <li><a href="cenovnik.php">Cenovnik</a></li>
                 <li><a href="#contact">Kontakt</a></li>

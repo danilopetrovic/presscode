@@ -19,11 +19,11 @@
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li><a href="index.php#intro">Početna</a></li>
+                <li><a href="index.php">Početna</a></li>
                 <li><a href="naseUsluge.php">Naše Usluge</a></li>
                 <li><a href="galerija.php">Galerija</a></li>
                 <!--<li><a href="index.php#team">Naš tim</a></li>-->
-                <li class="menu-active"><a href="">Cenovnik</a></li>
+                <li class="menu-active"><a href="#portfolio">Cenovnik</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
@@ -34,7 +34,7 @@
     <!--==========================
       CENOVNIK
     ============================-->
-    <section id="clients" class="section-bg" style="padding-top: 100px">
+    <section id="portfolio" class="section-bg" style="padding-top: 100px">
         <div class="container">
 
             <header class="section-header">
@@ -42,7 +42,7 @@
             </header>
 
             <div class="row portfolio-container" id="tabeleCenovnici">
-                <div id="kalkulator">
+                <div id="kalkulator" class="container">
                     <div class="col-12">
                         <h2>Kalkulator</h2>
                         <hr>
