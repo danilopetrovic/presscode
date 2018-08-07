@@ -1341,6 +1341,7 @@ th, td, tr {
     position: relative;
 }
 #mapa3d img {
+    width: 100%;
     border: none;
     opacity: 1;
     transition: opacity 0.4s;

@@ -9,7 +9,8 @@
             </div>
 
             <div class="col-md-6" id="mapa3d">
-                <a href="https://www.google.com/maps/@44.8548128,20.3705338,0a,82.2y,110.73h,88.52t/data=!3m4!1e1!3m2!1sL0v1EaULVmo2a1wV_ftUxQ!2e0?source=apiv3" target="_blank"><img src="img/mapa/3d-view.jpg" alt="3DMapaSlika" width="100%" height="250"></a>
+                <a href="https://www.google.com/maps/@44.8548128,20.3705338,0a,82.2y,110.73h,88.52t/data=!3m4!1e1!3m2!1sL0v1EaULVmo2a1wV_ftUxQ!2e0?source=apiv3" target="_blank"><img src="img/mapa/3d-view.jpg" alt="3d-view-Slika" width="100%" height="250"></a>
+
                 <!--style="pointer-events:none;"-->
             </div>
         </div>
