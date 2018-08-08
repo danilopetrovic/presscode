@@ -45,15 +45,14 @@
                 <div id="kalkulator" class="container">
                     <div class="col-12">
                         <h2>Kalkulator</h2>
-                        <hr>
                     </div>
-                    <div class="row">
+                    <div class="row" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.3em">
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">tiraž:</span>
                                 </div>
-                                <input type="number" class="form-control" min="1" style="text-align: right;" id="tiraz">
+                                <input type="number" class="form-control" min="1" style="text-align: right;" id="tiraz" value="1">
                                 <!--<div class="input-group-append">-->
                                 <!--<span class="input-group-text">komada</span>-->
                                 <!--</div>-->
@@ -88,16 +87,15 @@
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <select class="custom-select">
-                                <option value="0">Savijanje/Bigovanje</option>
-                                <option value="1">Ne</option>
-                                <option value="2">Da</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <select class="custom-select">
                                 <option value="0">Plastifikacija</option>
                                 <option value="1">Sjaj</option>
                                 <option value="2">Mat</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <select class="custom-select" onchange="bigovanjePromenaTexta();" id="bigovanje">
+                                <option value="0">Savijanje/Bigovanje</option>
+                                <option value="2">Da</option>
                             </select>
                         </div>
                         <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
@@ -117,39 +115,6 @@
 <!--                            </div>-->
 <!--                        </div>-->
                     </div>
-
-                    <script>
-                        var tiraz = document.querySelector('#tiraz');
-                        var padajuci = document.getElementsByTagName('select');
-                        var prikaziCenu = document.getElementById('prikaziCenu');
-
-                        function izracunajCenu() {
-                            let rezultat = 0;
-                            for (let i = 0; i < padajuci.length; i++) {
-                                rezultat += parseInt(padajuci[i].value);
-                            }
-                            rezultat = rezultat * parseInt(tiraz.value);
-                            console.log(rezultat);
-                            if (!isNaN(rezultat)) {
-                                prikaziCenu.value = rezultat;
-                            }
-                            // prikaziCenu.style.border = "1px solid #ced4da";
-                        }
-
-
-                        /*dodavanje event listenera na sva polja*/
-                        tiraz.addEventListener('input', function () {
-                            izracunajCenu();
-                            console.log('promenio si tiraz');
-                        });
-                        for (let i = 0; i < padajuci.length; i++) {
-                            padajuci[i].addEventListener('change', function () {
-                                izracunajCenu();
-                                console.log('promenio si padajuci');
-                                // prikaziCenu.style.border = "1px solid red";
-                            });
-                        }
-                    </script>
 
                     <div class="row">
                         <div class="col-12">
@@ -419,10 +384,70 @@
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>
+
 <script>
     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
     })
 </script>
+
+<script>
+    var tiraz = document.querySelector('#tiraz');
+    var padajuci = document.getElementsByTagName('select');
+    var prikaziCenu = document.getElementById('prikaziCenu');
+
+    /*~~~resetovanje svih polja na nulu~~~*/
+    tiraz.value = 1;
+    for (let i = 0; i < padajuci.length; i++) {
+        padajuci[i].value = 0;
+    }
+    prikaziCenu.value = "";
+    /*~~~resetovanje svih polja na nulu~~~KRAJ*/
+
+    /*~~~bigovanje promena texta~~~*/
+    var bigovanje = document.querySelector('#bigovanje');
+    function bigovanjePromenaTexta() {
+        // console.log(bigovanje.selectedIndex);
+        if (bigovanje.selectedIndex === 1) {
+            bigovanje.children[0].innerHTML = 'Savijanje/Bigovanje (Ne)';
+        } else {
+            bigovanje.children[0].innerHTML = 'Savijanje/Bigovanje';
+        }
+    }
+    /*~~~bigovanje promena texta~~~KRAJ*/
+
+
+    function izracunajCenu() {
+        let rezultat = 0;
+        for (let i = 0; i < padajuci.length; i++) {
+            rezultat += parseInt(padajuci[i].value);
+        }
+        if (!isNaN(rezultat) && rezultat > 0 && padajuci[0].value !== "0" && padajuci[1].value !== "0" && padajuci[2].value !== "0") {
+            prikaziCenu.value = rezultat * tiraz.value;
+        }
+        else {
+            prikaziCenu.value = 'Odaberite jos opcija kako bi proracun bio tacan...';
+        }
+        // prikaziCenu.style.border = "1px solid #ced4da";
+        // console.log(rezultat);
+    }
+
+
+    /*~~~dodavanje event listenera na sva polja~~~*/
+    tiraz.addEventListener('input', function () {
+        izracunajCenu();
+        // console.log('promenio si tiraz');
+    });
+    for (let i = 0; i < padajuci.length; i++) {
+        padajuci[i].addEventListener('change', function () {
+            izracunajCenu();
+            // console.log('promenio si padajuci');
+            // prikaziCenu.style.border = "1px solid red";
+        });
+    }
+    /*~~~dodavanje event listenera na sva polja~~~KRAJ*/
+
+</script>
+
 </body>
 </html>
