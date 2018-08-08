@@ -53,7 +53,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">tiraž:</span>
                                 </div>
-                                <input type="number" class="form-control" min="1" style="text-align: right;">
+                                <input type="number" class="form-control" min="1" style="text-align: right;" id="tiraz">
                                 <!--<div class="input-group-append">-->
                                 <!--<span class="input-group-text">komada</span>-->
                                 <!--</div>-->
@@ -100,18 +100,56 @@
                                 <option value="2">Mat</option>
                             </select>
                         </div>
-                        <div class="col-12 col-mb-3 offset-lg-2 col-lg-8">
+                        <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">cena:</span>
                                 </div>
-                                <input type="text" class="form-control" value="0" readonly style="text-align: right">
+                                <input type="text" class="form-control" value="0" readonly style="text-align: right" id="prikaziCenu">
                                 <div class="input-group-append">
                                     <span class="input-group-text">dinara</span>
                                 </div>
                             </div>
                         </div>
+<!--                        <div class="col-sm-5 col-md-4 col-lg-5">-->
+<!--                            <div class="input-group">-->
+<!--                                <button class="btn btn-outline-info form-control" id="izracunaj" onclick="izracunajCenu()">Izračunaj</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
+
+                    <script>
+                        var tiraz = document.querySelector('#tiraz');
+                        var padajuci = document.getElementsByTagName('select');
+                        var prikaziCenu = document.getElementById('prikaziCenu');
+
+                        function izracunajCenu() {
+                            let rezultat = 0;
+                            for (let i = 0; i < padajuci.length; i++) {
+                                rezultat += parseInt(padajuci[i].value);
+                            }
+                            rezultat = rezultat * parseInt(tiraz.value);
+                            console.log(rezultat);
+                            if (!isNaN(rezultat)) {
+                                prikaziCenu.value = rezultat;
+                            }
+                            // prikaziCenu.style.border = "1px solid #ced4da";
+                        }
+
+
+                        /*dodavanje event listenera na sva polja*/
+                        tiraz.addEventListener('input', function () {
+                            izracunajCenu();
+                            console.log('promenio si tiraz');
+                        });
+                        for (let i = 0; i < padajuci.length; i++) {
+                            padajuci[i].addEventListener('change', function () {
+                                izracunajCenu();
+                                console.log('promenio si padajuci');
+                                // prikaziCenu.style.border = "1px solid red";
+                            });
+                        }
+                    </script>
 
                     <div class="row">
                         <div class="col-12">
