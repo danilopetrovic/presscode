@@ -397,11 +397,11 @@
     var prikaziCenu = document.getElementById('prikaziCenu');
 
     /*~~~resetovanje svih polja na nulu~~~*/
-    tiraz.value = 1;
-    for (let i = 0; i < padajuci.length; i++) {
-        padajuci[i].value = 0;
-    }
-    prikaziCenu.value = "";
+    // tiraz.value = 1;
+    // for (let i = 0; i < padajuci.length; i++) {
+    //     padajuci[i].value = 0;
+    // }
+    // prikaziCenu.value = "";
     /*~~~resetovanje svih polja na nulu~~~KRAJ*/
 
     /*~~~bigovanje promena texta~~~*/
@@ -424,9 +424,12 @@
         }
         if (!isNaN(rezultat) && rezultat > 0 && padajuci[0].value !== "0" && padajuci[1].value !== "0" && padajuci[2].value !== "0") {
             prikaziCenu.value = rezultat * tiraz.value;
+            prikaziCenu.style.color = '#495057';
+            prikaziCenu.style.fontWeight = 'bold';
         }
         else {
             prikaziCenu.value = 'Odaberite jos opcija kako bi proracun bio tacan...';
+            prikaziCenu.style.color = 'red';
         }
         // prikaziCenu.style.border = "1px solid #ced4da";
         // console.log(rezultat);
