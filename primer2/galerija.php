@@ -61,14 +61,6 @@
                 <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
                     <div class="portfolio-wrap">
                         <figure>
-                                <iframe src="https://www.youtube.com/embed/9VO2WaKbMRw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
-                    <div class="portfolio-wrap">
-                        <figure>
                             <a href="img/galerija/02.jpg" data-lightbox="portfolio" data-title="02" title="Preview"><img src="img/galerija/02.jpg" class="img-fluid" alt=""></a>
                         </figure>
                     </div>
