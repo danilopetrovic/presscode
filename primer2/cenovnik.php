@@ -46,7 +46,7 @@
                     <div class="col-12">
                         <h2>Kalkulator</h2>
                     </div>
-                    <div class="row" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.3em">
+                    <div class="row" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.2em 0 0.5em; margin: 0.1rem 0.1rem 0.8rem 0.1rem;">
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -59,62 +59,129 @@
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                            <select class="custom-select">
-                                <option value="0">Format</option>
-                                <option value="1">A3</option>
-                                <option value="2">A4</option>
-                                <option value="3">A5</option>
-                                <option value="4">A6</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <select class="custom-select">
-                                <option value="0">Vrsta papira</option>
-                                <option value="1">80gr ofset</option>
-                                <option value="2">120gr ofset</option>
-                                <option value="3">150gr ofset</option>
-                                <option value="4">350gr ofset</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <select class="custom-select">
-                                <option value="0">Štampa</option>
-                                <option value="1">crno-belo jednostrano</option>
-                                <option value="2">crno-belo dvostrano</option>
-                                <option value="3">kolor jednostrano</option>
-                                <option value="4">kolor dvostrano</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <select class="custom-select">
-                                <option value="0">Plastifikacija</option>
-                                <option value="1">Sjaj</option>
-                                <option value="2">Mat</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <select class="custom-select" onchange="bigovanjePromenaTexta();" id="bigovanje">
-                                <option value="0">Savijanje/Bigovanje</option>
-                                <option value="2">Da</option>
-                            </select>
-                        </div>
-                        <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
                             <div class="input-group">
                                 <div class="input-group-prepend">
+                                    <span class="input-group-text">Format:</span>
+                                </div>
+                                <select class="custom-select">
+                                    <option value="0">Izaberite</option>
+                                    <option value="1">A3</option>
+                                    <option value="2">A4</option>
+                                    <option value="3">A5</option>
+                                    <option value="4">A6</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-6 col-lg-4">-->
+                        <!--    <select class="custom-select">-->
+                        <!--        <option value="0">Format</option>-->
+                        <!--        <option value="1">A3</option>-->
+                        <!--        <option value="2">A4</option>-->
+                        <!--        <option value="3">A5</option>-->
+                        <!--        <option value="4">A6</option>-->
+                        <!--    </select>-->
+                        <!--</div>-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Vrsta papira:</span>
+                                </div>
+                                <select class="custom-select">
+                                    <option value="0">Izaberite</option>
+                                    <option value="1">80gr ofset</option>
+                                    <option value="2">120gr ofset</option>
+                                    <option value="3">150gr ofset</option>
+                                    <option value="4">350gr ofset</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-6 col-lg-4">-->
+                        <!--    <select class="custom-select">-->
+                        <!--        <option value="0">Vrsta papira</option>-->
+                        <!--        <option value="1">80gr ofset</option>-->
+                        <!--        <option value="2">120gr ofset</option>-->
+                        <!--        <option value="3">150gr ofset</option>-->
+                        <!--        <option value="4">350gr ofset</option>-->
+                        <!--    </select>-->
+                        <!--</div>-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Štampa:</span>
+                                </div>
+                                <select class="custom-select">
+                                    <option value="0">Izaberite</option>
+                                    <option value="1">crno-belo jednostrano</option>
+                                    <option value="2">crno-belo dvostrano</option>
+                                    <option value="3">kolor jednostrano</option>
+                                    <option value="4">kolor dvostrano</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-6 col-lg-4">-->
+                        <!--    <select class="custom-select">-->
+                        <!--        <option value="0">Štampa</option>-->
+                        <!--        <option value="1">crno-belo jednostrano</option>-->
+                        <!--        <option value="2">crno-belo dvostrano</option>-->
+                        <!--        <option value="3">kolor jednostrano</option>-->
+                        <!--        <option value="4">kolor dvostrano</option>-->
+                        <!--    </select>-->
+                        <!--</div>-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Plastifikacija:</span>
+                                </div>
+                                <select class="custom-select">
+                                    <option value="0">Izaberite</option>
+                                    <option value="1">Sjaj</option>
+                                    <option value="2">Mat</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-6 col-lg-4">-->
+                        <!--    <select class="custom-select">-->
+                        <!--        <option value="0">Plastifikacija</option>-->
+                        <!--        <option value="1">Sjaj</option>-->
+                        <!--        <option value="2">Mat</option>-->
+                        <!--    </select>-->
+                        <!--</div>-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Savijanje/Bigovanje:</span>
+                                </div>
+                                <select class="custom-select" onchange="bigovanjePromenaTexta();" id="bigovanje">
+                                    <option value="0">Izaberite</option>
+                                    <option value="2">Da</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--<div class="col-md-6 col-lg-4">-->
+                        <!--    <select class="custom-select" onchange="bigovanjePromenaTexta();" id="bigovanje">-->
+                        <!--        <option value="0">Savijanje/Bigovanje</option>-->
+                        <!--        <option value="2">Da</option>-->
+                        <!--    </select>-->
+                        <!--</div>-->
+                        <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
+                            <div class="input-group">
+                                <div class="input-group-prepend posebno">
                                     <span class="input-group-text">cena:</span>
                                 </div>
                                 <input type="text" class="form-control" value="0" readonly style="text-align: right" id="prikaziCenu">
-                                <div class="input-group-append">
+                                <div class="input-group-append posebno">
                                     <span class="input-group-text">dinara</span>
                                 </div>
                             </div>
                         </div>
-<!--                        <div class="col-sm-5 col-md-4 col-lg-5">-->
-<!--                            <div class="input-group">-->
-<!--                                <button class="btn btn-outline-info form-control" id="izracunaj" onclick="izracunajCenu()">Izračunaj</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <!--<div class="col-sm-5 col-md-4 col-lg-5">-->
+                        <!--    <div class="input-group">-->
+                        <!--        <button class="btn btn-outline-info form-control" id="izracunaj" onclick="izracunajCenu()">Izračunaj</button>-->
+                        <!--    </div>-->
+                        <!--</div>-->
+
                     </div>
+                    <div class="col-12 alert alert-info text-center" role="alert"><i class="fas fa-exclamation-circle"></i> Za detaljniji proračun cenе pozvati!</div>
 
                     <div class="row">
                         <div class="col-12">
@@ -317,7 +384,7 @@
         </div>
     </section><!-- #cenovnik -->
 
-    <div id="divRazdvajac" style="height: 1000px"></div>
+    <div id="divRazdvajac" style="height: 1200px"></div>
     <!--==========================
       Contact Section
     ============================-->
@@ -411,11 +478,10 @@
         if (bigovanje.selectedIndex === 1) {
             bigovanje.children[0].innerHTML = 'Savijanje/Bigovanje (Ne)';
         } else {
-            bigovanje.children[0].innerHTML = 'Savijanje/Bigovanje';
+            bigovanje.children[0].innerHTML = 'Izaberite';
         }
     }
     /*~~~bigovanje promena texta~~~KRAJ*/
-
 
     function izracunajCenu() {
         let rezultat = 0;
@@ -429,6 +495,7 @@
         }
         else {
             prikaziCenu.value = 'Odaberite jos opcija kako bi proracun bio tacan...';
+            prikaziCenu.style.fontWeight = 'normal';
             prikaziCenu.style.color = 'red';
         }
         // prikaziCenu.style.border = "1px solid #ced4da";

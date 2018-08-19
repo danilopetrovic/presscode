@@ -1378,3 +1378,10 @@ kontakt 3d mapa
 /*-----------------------
 kontakt 3d mapa kraj
 -----------------------*/
+.input-group-text {
+    width: 140px;
+    font-size: 0.8em;
+}
+.posebno {
+    width: 70px;
+}
