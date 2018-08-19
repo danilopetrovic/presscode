@@ -151,21 +151,16 @@ h1, h2, h3, h4, h5, h6 {
     magenta 200px, magenta 270px,
         /*black 269px, black 270px,*/ cyan 270px, cyan 340px,
         /*black 340px, black 341px,*/ yellow 340px, yellow 410px,
-    white 420px, white 9000px);
-    background-size: 9000px;
-    animation: 10s linear slidein infinite;
+    white 420px, white 4000px);
+    background-size: 4000px;
+    animation: 20s linear slidein infinite;
 }
 @keyframes slidein {
     from {
         background-position: 0 0;
     }
     to {
-        background-position: -1500px 0;
-    }
-}
-@media (max-width: 850px) {
-    #logo a img {
-        animation: 17s linear slidein infinite;
+        background-position: -4000px 0;
     }
 }
 /*--------------------------------------------------------------
@@ -1382,4 +1377,19 @@ kontakt 3d mapa
 }
 /*-----------------------
 kontakt 3d mapa kraj
+-----------------------*/
+
+
+/*-----------------------
+kalkulator stilizacija
+-----------------------*/
+.input-group-text {
+    width: 140px;
+    font-size: 0.8em;
+}
+.posebno {
+    width: 70px;
+}
+/*-----------------------
+kalkulator stilizacija kraj
 -----------------------*/
