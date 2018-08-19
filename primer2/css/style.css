@@ -151,8 +151,8 @@ h1, h2, h3, h4, h5, h6 {
     magenta 200px, magenta 270px,
         /*black 269px, black 270px,*/ cyan 270px, cyan 340px,
         /*black 340px, black 341px,*/ yellow 340px, yellow 410px,
-    white 420px, white 1500px);
-    background-size: 1500px;
+    white 420px, white 9000px);
+    background-size: 9000px;
     animation: 10s linear slidein infinite;
 }
 @keyframes slidein {
@@ -165,11 +165,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 850px) {
     #logo a img {
-        animation: 7s linear slidein infinite;
+        animation: 17s linear slidein infinite;
     }
 }
 /*--------------------------------------------------------------
-# Kraj Animacija Logoa
+# Animacija Logoa Kraj
 --------------------------------------------------------------*/
 #intro {
     display: table;
@@ -1358,7 +1358,9 @@ th, td, tr {
 .menu-active a {
     color: #FF8C17 !important;
 }
-/*kontakt 3d mapa*/
+/*-----------------------
+kontakt 3d mapa
+-----------------------*/
 #mapa3d {
     position: relative;
 }
@@ -1378,4 +1380,6 @@ th, td, tr {
     border: none;
     opacity: 1;
 }
-/*kontakt 3d mapa kraj*/
+/*-----------------------
+kontakt 3d mapa kraj
+-----------------------*/
