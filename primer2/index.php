@@ -442,7 +442,7 @@
             <div class="owl-carousel clients-carousel">
                 <img src="img/clients/client-01.png" alt=""> <img src="img/clients/client-02.png" alt="">
                 <img src="img/clients/client-03.png" alt=""> <img src="img/clients/client-04.jpg" alt="">
-                <img src="img/clients/client-05.png" alt=""> <img src="img/clients/client-06.jpg" alt="">
+                <img src="img/clients/client-05.jpg" alt=""> <img src="img/clients/client-06.jpg" alt="">
                 <img src="img/clients/client-07.jpg" alt=""> <img src="img/clients/client-08.png" alt="">
                 <img src="img/clients/client-09.png" alt=""> <img src="img/clients/client-10.png" alt="">
                 <img src="img/clients/client-11.png" alt="">
