@@ -65,7 +65,7 @@
                                 </div>
                                 <select class="custom-select">
                                     <option value="0">Izaberite</option>
-                                    <option value="1">A3</option>
+                                    <option value="1" title="x din">A3</option>
                                     <option value="2">A4</option>
                                     <option value="3">A5</option>
                                     <option value="4">A6</option>
@@ -111,8 +111,9 @@
                                 </div>
                                 <select class="custom-select">
                                     <option value="0">Izaberite</option>
-                                    <option value="1">crno-belo jednostrano</option>
-                                    <option value="2">crno-belo dvostrano</option>
+                                    <option value="1">crno jednostrano</option>
+                                    <option value="2">crno dvostrano</option>
+                                    <option value="5">crno/kolor dvostrano</option>
                                     <option value="3">kolor jednostrano</option>
                                     <option value="4">kolor dvostrano</option>
                                 </select>
@@ -133,9 +134,11 @@
                                     <span class="input-group-text">Plastifikacija:</span>
                                 </div>
                                 <select class="custom-select">
-                                    <option value="0">Izaberite</option>
-                                    <option value="1">Sjaj</option>
-                                    <option value="2">Mat</option>
+                                    <option value="0" title="0 din">Izaberite</option>
+                                    <option value="5" title="5 din">Sjaj Jednostrano</option>
+                                    <option value="10" title="10 din">Sjaj Dvostrano</option>
+                                    <option value="8" title="8 din">Mat Jednostrano</option>
+                                    <option value="16" title="16 din">Mat Dvostrano</option>
                                 </select>
                             </div>
                         </div>
@@ -179,9 +182,11 @@
                         <!--        <button class="btn btn-outline-info form-control" id="izracunaj" onclick="izracunajCenu()">Izračunaj</button>-->
                         <!--    </div>-->
                         <!--</div>-->
-
                     </div>
+
+
                     <div class="col-12 alert alert-info text-center" role="alert"><i class="fas fa-exclamation-circle"></i> Za detaljniji proračun cenе pozvati!</div>
+
 
                     <div class="row">
                         <div class="col-12">
