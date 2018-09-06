@@ -46,6 +46,7 @@
                     <div class="col-12">
                         <h2>Kalkulator</h2>
                     </div>
+
                     <div class="row" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.2em 0 0.5em; margin: 0.1rem 0.1rem 0.8rem 0.1rem;">
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
@@ -64,11 +65,11 @@
                                     <span class="input-group-text">Format:</span>
                                 </div>
                                 <select class="custom-select">
-                                    <option value="0">Izaberite</option>
-                                    <option value="1" title="x din">A3</option>
-                                    <option value="2">A4</option>
-                                    <option value="3">A5</option>
-                                    <option value="4">A6</option>
+                                    <option value="0" title="nesto1">Izaberite</option>
+                                    <option value="1" title="nesto2">A3</option>
+                                    <option value="2" title="nesto3">A4</option>
+                                    <option value="3" title="nesto4">A5</option>
+                                    <option value="4" title="nesto5">A6</option>
                                 </select>
                             </div>
                         </div>
@@ -134,7 +135,7 @@
                                     <span class="input-group-text">Plastifikacija:</span>
                                 </div>
                                 <select class="custom-select">
-                                    <option value="0" title="0 din">Izaberite</option>
+                                    <option value="0">Izaberite</option>
                                     <option value="5" title="5 din">Sjaj Jednostrano</option>
                                     <option value="10" title="10 din">Sjaj Dvostrano</option>
                                     <option value="8" title="8 din">Mat Jednostrano</option>
@@ -184,9 +185,9 @@
                         <!--</div>-->
                     </div>
 
-
-                    <div class="col-12 alert alert-info text-center" role="alert"><i class="fas fa-exclamation-circle"></i> Za detaljniji proračun cenе pozvati!</div>
-
+                    <div class="col-12 alert alert-info text-center" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> Za detaljniji proračun cenе pozvati!
+                    </div>
 
                     <div class="row">
                         <div class="col-12">
@@ -390,56 +391,12 @@
     </section><!-- #cenovnik -->
 
     <div id="divRazdvajac" style="height: 1200px"></div>
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="container-fluid section-bg wow fadeInUp">
 
-        <div class="section-header">
-            <h3>Kontakt</h3>
-            <!--<p></p>-->
-        </div>
-
-        <div class="container">
-            <div class="row contact-info">
-                <div class="col-md-4">
-                    <div class="contact-address">
-                        <i class="ion-ios-location-outline"></i>
-                        <h3>Adresa</h3>
-                        <address>Ratarski put 53, Beograd</address>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="contact-phone">
-                        <i class="ion-ios-telephone-outline"></i>
-                        <h3>Kontakt Telefoni:</h3>
-                        <p><a href="tel:+381114320160">011 / 43 - 20 - 160</a></p>
-                        <p><a href="tel:+38163310535">063 / 310 - 535</a></p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="contact-email">
-                        <i class="ion-ios-email-outline"></i>
-                        <h3>Email</h3>
-                        <p><a href="mailto:info@example.com">office@presscode.rs</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section><!-- #contact -->
+    <?php include_once "subFooterKontakt.php" ?>
 
 </main>
 
 <?php include_once "footer.php" ?>
-
-<script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    })
-</script>
 
 <script>
     var tiraz = document.querySelector('#tiraz');
@@ -456,6 +413,7 @@
 
     /*~~~bigovanje promena texta~~~*/
     var bigovanje = document.querySelector('#bigovanje');
+
     function bigovanjePromenaTexta() {
         // console.log(bigovanje.selectedIndex);
         if (bigovanje.selectedIndex === 1) {
@@ -464,6 +422,7 @@
             bigovanje.children[0].innerHTML = 'Izaberite';
         }
     }
+
     /*~~~bigovanje promena texta~~~KRAJ*/
 
     function izracunajCenu() {
