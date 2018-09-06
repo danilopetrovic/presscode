@@ -1342,6 +1342,9 @@ th, td, tr {
     color: #FF8C17;
     transition: 0.5s;
 }
+#kalkulator {
+    margin-top: 10px;
+}
 #kalkulator > div > div {
     margin-top: 5px;
 }
