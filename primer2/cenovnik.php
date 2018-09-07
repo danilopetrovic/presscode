@@ -93,7 +93,7 @@
                                     <span class="input-group-text">Štampa:</span>
                                 </div>
                                 <select class="custom-select">
-                                    <option>Izaberite</option>
+                                    <option value="0">Izaberite</option>
                                     <option value="1">1/0 crno jednostrano</option>
                                     <option value="2">1/1 crno dvostrano</option>
                                     <option value="5">4/1 kolor/crno dvostrano</option>
@@ -146,7 +146,9 @@
                                 </div>
                                 <select class="custom-select" onchange="promenaTexta(this);" id="Savijanje/Bigovanje">
                                     <option value="0">Izaberite</option>
-                                    <option value="2">Da</option>
+                                    <option value="1">Jednom</option>
+                                    <option value="2">Dvaput</option>
+                                    <option value="3">Triput</option>
                                 </select>
                             </div>
                         </div>
@@ -440,7 +442,7 @@
         for (let i = 0; i < padajuci.length; i++) {
             rezultat += parseInt(padajuci[i].value);
         }
-        if (!isNaN(rezultat) && rezultat > 0 && padajuci[0].value !== "0" && padajuci[1].value !== "0" && padajuci[2].value !== "0") {
+        if (!isNaN(rezultat) && rezultat > 0 && padajuci[0].value !== "0" && padajuci[1].value !== "0") {
             prikaziCenu.value = rezultat * tiraz.value;
             prikaziCenu.style.color = '#495057';
             prikaziCenu.style.fontWeight = 'bold';
