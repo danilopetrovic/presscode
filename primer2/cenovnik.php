@@ -51,7 +51,7 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">tiraž:</span>
+                                    <span class="input-group-text">Tiraž:</span>
                                 </div>
                                 <input type="number" class="form-control" min="1" style="text-align: right;" id="tiraz" value="1">
                                 <!--<div class="input-group-append">-->
@@ -62,37 +62,19 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text">Format:</span>
-                                </div>
-                                <select class="custom-select">
-                                    <option value="0" title="nesto1">Izaberite</option>
-                                    <option value="1" title="nesto2">A3</option>
-                                    <option value="2" title="nesto3">A4</option>
-                                    <option value="3" title="nesto4">A5</option>
-                                    <option value="4" title="nesto5">A6</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!--<div class="col-md-6 col-lg-4">-->
-                        <!--    <select class="custom-select">-->
-                        <!--        <option value="0">Format</option>-->
-                        <!--        <option value="1">A3</option>-->
-                        <!--        <option value="2">A4</option>-->
-                        <!--        <option value="3">A5</option>-->
-                        <!--        <option value="4">A6</option>-->
-                        <!--    </select>-->
-                        <!--</div>-->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
                                     <span class="input-group-text">Vrsta papira:</span>
                                 </div>
                                 <select class="custom-select">
                                     <option value="0">Izaberite</option>
-                                    <option value="1">80gr ofset</option>
-                                    <option value="2">120gr ofset</option>
-                                    <option value="3">150gr ofset</option>
-                                    <option value="4">350gr ofset</option>
+                                    <option value="1">Kunzdruk 350</option>
+                                    <option value="1">Kunzdruk 250+</option>
+                                    <option value="1">Kunzdruk 250-</option>
+                                    <option value="1">Muflon (Samolepljivi papir)</option>
+                                    <option value="1">Teksturirani papir (specijalni papir)</option>
+                                    <option value="1">Ofsetni 80g</option>
+                                    <option value="1">A3 Ofsetni</option>
+                                    <option value="1">A4 Ofsetni</option>
+                                    <option value="1">Papir od klijenta</option>
                                 </select>
                             </div>
                         </div>
@@ -111,12 +93,19 @@
                                     <span class="input-group-text">Štampa:</span>
                                 </div>
                                 <select class="custom-select">
-                                    <option value="0">Izaberite</option>
-                                    <option value="1">crno jednostrano</option>
-                                    <option value="2">crno dvostrano</option>
-                                    <option value="5">crno/kolor dvostrano</option>
-                                    <option value="3">kolor jednostrano</option>
-                                    <option value="4">kolor dvostrano</option>
+                                    <option>Izaberite</option>
+                                    <option value="1">1/0 crno jednostrano</option>
+                                    <option value="2">1/1 crno dvostrano</option>
+                                    <option value="5">4/1 kolor/crno dvostrano</option>
+                                    <option value="3">4/0 kolor jednostrano</option>
+                                    <option value="4">4/4 kolor dvostrano</option>
+                                    <option value="4">Otisak od klijenta</option>
+                                    <option value="4">1/0 CB - A4</option>
+                                    <option value="4">1/0 CB - A3</option>
+                                    <option value="4">1/0 CB - B4</option>
+                                    <option value="4">1/1 CB - A4</option>
+                                    <option value="4">1/1 CB - A3</option>
+                                    <option value="4">1/1 CB - B4</option>
                                 </select>
                             </div>
                         </div>
@@ -155,14 +144,36 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Savijanje/Bigovanje:</span>
                                 </div>
-                                <select class="custom-select" onchange="bigovanjePromenaTexta();" id="bigovanje">
+                                <select class="custom-select" onchange="promenaTexta(this);" id="Savijanje/Bigovanje">
+                                    <option value="0">Izaberite</option>
+                                    <option value="2">Da</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Klamovanje:</span>
+                                </div>
+                                <select class="custom-select" onchange="promenaTexta(this);" id="Klamovanje">
+                                    <option value="0">Izaberite</option>
+                                    <option value="2">Da</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ćoškarenje:</span>
+                                </div>
+                                <select class="custom-select" onchange="promenaTexta(this);" id="Ćoškarenje">
                                     <option value="0">Izaberite</option>
                                     <option value="2">Da</option>
                                 </select>
                             </div>
                         </div>
                         <!--<div class="col-md-6 col-lg-4">-->
-                        <!--    <select class="custom-select" onchange="bigovanjePromenaTexta();" id="bigovanje">-->
+                        <!--    <select class="custom-select" onchange="promenaTexta();" id="bigovanje">-->
                         <!--        <option value="0">Savijanje/Bigovanje</option>-->
                         <!--        <option value="2">Da</option>-->
                         <!--    </select>-->
@@ -170,7 +181,7 @@
                         <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
                             <div class="input-group">
                                 <div class="input-group-prepend posebno">
-                                    <span class="input-group-text">cena:</span>
+                                    <span class="input-group-text">Cena:</span>
                                 </div>
                                 <input type="text" class="form-control" value="0" readonly style="text-align: right" id="prikaziCenu">
                                 <div class="input-group-append posebno">
@@ -414,15 +425,14 @@
     /*~~~bigovanje promena texta~~~*/
     var bigovanje = document.querySelector('#bigovanje');
 
-    function bigovanjePromenaTexta() {
+    function promenaTexta(e) {
         // console.log(bigovanje.selectedIndex);
-        if (bigovanje.selectedIndex === 1) {
-            bigovanje.children[0].innerHTML = 'Savijanje/Bigovanje (Ne)';
+        if (e.selectedIndex !== 0) {
+            e.children[0].innerHTML = e.id+' (Ne)';
         } else {
-            bigovanje.children[0].innerHTML = 'Izaberite';
+            e.children[0].innerHTML = 'Izaberite';
         }
     }
-
     /*~~~bigovanje promena texta~~~KRAJ*/
 
     function izracunajCenu() {
@@ -443,7 +453,6 @@
         // prikaziCenu.style.border = "1px solid #ced4da";
         // console.log(rezultat);
     }
-
 
     /*~~~dodavanje event listenera na sva polja~~~*/
     tiraz.addEventListener('input', function () {
