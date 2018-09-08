@@ -100,10 +100,10 @@
                                     <option value="23" title="23 din">1/0 crno jednostrano</option>
                                     <option value="32" title="32 din">1/1 crno dvostrano</option>
                                     <option value="1" title="1 din">1/0 CB - A4</option>
-                                    <option value="2" title="2 din">1/0 CB - A3</option>
-                                    <option value="3" title="3 din">1/0 CB - B4 3din???</option>
                                     <option value="2" title="2 din">1/1 CB - A4</option>
+                                    <option value="2" title="2 din">1/0 CB - A3</option>
                                     <option value="4" title="4 din">1/1 CB - A3</option>
+                                    <option value="3" title="3 din">1/0 CB - B4 3din???</option>
                                     <option value="6" title="6 din">1/1 CB - B4 6din???</option>
 <!--                                    <option value="4">Otisak od klijenta</option>-->
                                 </select>
@@ -411,66 +411,7 @@
 
 <?php include_once "footer.php" ?>
 
-<script>
-    var tiraz = document.querySelector('#tiraz');
-    var padajuci = document.getElementsByTagName('select');
-    var prikaziCenu = document.getElementById('prikaziCenu');
-
-    /*~~~resetovanje svih polja na nulu~~~*/
-    // tiraz.value = 1;
-    // for (let i = 0; i < padajuci.length; i++) {
-    //     padajuci[i].value = 0;
-    // }
-    // prikaziCenu.value = "";
-    /*~~~resetovanje svih polja na nulu~~~KRAJ*/
-
-    /*~~~bigovanje promena texta~~~*/
-    var bigovanje = document.querySelector('#bigovanje');
-
-    function promenaTexta(e) {
-        // console.log(bigovanje.selectedIndex);
-        if (e.selectedIndex !== 0) {
-            e.children[0].innerHTML = e.id+' (Ne)';
-        } else {
-            e.children[0].innerHTML = 'Izaberite';
-        }
-    }
-    /*~~~bigovanje promena texta~~~KRAJ*/
-
-    function izracunajCenu() {
-        let rezultat = 0;
-        for (let i = 0; i < padajuci.length; i++) {
-            rezultat += parseInt(padajuci[i].value);
-        }
-        if (!isNaN(rezultat) && rezultat > 0 && padajuci[0].value !== "0" && padajuci[1].value !== "0") {
-            prikaziCenu.value = rezultat * tiraz.value;
-            prikaziCenu.style.color = '#495057';
-            prikaziCenu.style.fontWeight = 'bold';
-        }
-        else {
-            prikaziCenu.value = 'Odaberite jos opcija kako bi proracun bio tacan...';
-            prikaziCenu.style.fontWeight = 'normal';
-            prikaziCenu.style.color = 'red';
-        }
-        // prikaziCenu.style.border = "1px solid #ced4da";
-        // console.log(rezultat);
-    }
-
-    /*~~~dodavanje event listenera na sva polja~~~*/
-    tiraz.addEventListener('input', function () {
-        izracunajCenu();
-        // console.log('promenio si tiraz');
-    });
-    for (let i = 0; i < padajuci.length; i++) {
-        padajuci[i].addEventListener('change', function () {
-            izracunajCenu();
-            // console.log('promenio si padajuci');
-            // prikaziCenu.style.border = "1px solid red";
-        });
-    }
-    /*~~~dodavanje event listenera na sva polja~~~KRAJ*/
-
-</script>
+<script src="kalkulator.js"></script>
 
 </body>
 </html>
