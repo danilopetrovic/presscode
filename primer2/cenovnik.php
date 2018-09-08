@@ -43,11 +43,11 @@
 
             <div class="row portfolio-container" id="tabeleCenovnici">
                 <div id="kalkulator" class="container">
-                    <div class="col-12">
+                    <div class="col-12 wow fadeInLeft">
                         <h2>Kalkulator</h2>
                     </div>
 
-                    <div class="row" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.2em 0 0.5em; margin: 0.1rem 0.1rem 0.8rem 0.1rem;">
+                    <div class="row  wow fadeInUp" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.2em 0 0.5em; margin: 0.1rem 0.1rem 0.8rem 0.1rem;">
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -65,16 +65,16 @@
                                     <span class="input-group-text">Vrsta papira:</span>
                                 </div>
                                 <select class="custom-select">
-                                    <option value="0">Izaberite</option>
-                                    <option value="1">Kunzdruk 350</option>
-                                    <option value="1">Kunzdruk 250+</option>
-                                    <option value="1">Kunzdruk 250-</option>
-                                    <option value="1">Muflon (Samolepljivi papir)</option>
-                                    <option value="1">Teksturirani papir (specijalni papir)</option>
-                                    <option value="1">Ofsetni 80g</option>
-                                    <option value="1">A3 Ofsetni</option>
-                                    <option value="1">A4 Ofsetni</option>
-                                    <option value="1">Papir od klijenta</option>
+                                    <option value="0" title="0 din">Izaberite</option>
+                                    <option value="4" title="4 din">Kunzdruk 130g - 200g</option>
+                                    <option value="7" title="7 din">Kunzdruk 250g - 300g</option>
+                                    <option value="8" title="8 din">Kunzdruk 350g</option>
+                                    <option value="15" title="15 din">Muflon (samolepljivi papir)</option>
+                                    <option value="80" title="80 din">Teksturirani papir (specijalni papir)</option>
+                                    <option value="2" title="2 din">Ofsetni 80g</option>
+                                    <option value="1" title="1 din">A3 Ofsetni</option>
+                                    <option value="0.5" title="0.5 din">A4 Ofsetni</option>
+<!--                                    <option value="1">Papir od klijenta</option>-->
                                 </select>
                             </div>
                         </div>
@@ -94,18 +94,18 @@
                                 </div>
                                 <select class="custom-select">
                                     <option value="0">Izaberite</option>
-                                    <option value="1">1/0 crno jednostrano</option>
-                                    <option value="2">1/1 crno dvostrano</option>
-                                    <option value="5">4/1 kolor/crno dvostrano</option>
-                                    <option value="3">4/0 kolor jednostrano</option>
-                                    <option value="4">4/4 kolor dvostrano</option>
-                                    <option value="4">Otisak od klijenta</option>
-                                    <option value="4">1/0 CB - A4</option>
-                                    <option value="4">1/0 CB - A3</option>
-                                    <option value="4">1/0 CB - B4</option>
-                                    <option value="4">1/1 CB - A4</option>
-                                    <option value="4">1/1 CB - A3</option>
-                                    <option value="4">1/1 CB - B4</option>
+                                    <option value="80" title="80 din">4/0 kolor jednostrano</option>
+                                    <option value="98" title="98 din">4/1 kolor/crno dvostrano</option>
+                                    <option value="116" title="116 din">4/4 kolor dvostrano</option>
+                                    <option value="23" title="23 din">1/0 crno jednostrano</option>
+                                    <option value="32" title="32 din">1/1 crno dvostrano</option>
+                                    <option value="1" title="1 din">1/0 CB - A4</option>
+                                    <option value="2" title="2 din">1/0 CB - A3</option>
+                                    <option value="3" title="3 din">1/0 CB - B4 3din???</option>
+                                    <option value="2" title="2 din">1/1 CB - A4</option>
+                                    <option value="4" title="4 din">1/1 CB - A3</option>
+                                    <option value="6" title="6 din">1/1 CB - B4 6din???</option>
+<!--                                    <option value="4">Otisak od klijenta</option>-->
                                 </select>
                             </div>
                         </div>
@@ -198,13 +198,13 @@
                         <!--</div>-->
                     </div>
 
-                    <div class="col-12 alert alert-info text-center" role="alert">
+                    <div class="col-12 alert alert-info text-center wow fadeInRight" role="alert">
                         <i class="fas fa-exclamation-circle"></i> Za detaljniji proračun cenе pozvati!
                     </div>
 
                     <div class="row">
                         <div class="col-12">
-                            <table id="legendaTabela">
+                            <table id="legendaTabela" class="wow fadeInUp">
                                 <tr>
                                     <td style="background: linear-gradient(to right, rgb(0, 255, 255), rgb(255, 0, 255), rgb(255, 255, 0), rgb(0, 0, 0))">
                                         &nbsp;&nbsp;&nbsp;
@@ -221,7 +221,7 @@
                                 </tr>
                             </table>
                             <p>Vizit karte 90×50mm + plastifikacija (sjaj/mat):</p>
-                            <table>
+                            <table class="wow fadeInUp">
                                 <thead>
                                 <tr>
                                     <th>&nbsp;</th>
@@ -299,7 +299,7 @@
                             </table>
 
                             <p>Digitalni print na papirima od 80g do 350g:</p>
-                            <table>
+                            <table class="wow fadeInUp">
                                 <thead>
                                 <tr>
                                     <th>&nbsp;</th>
@@ -370,7 +370,7 @@
                             </table>
 
                             <p>Plastifikacija:</p>
-                            <table>
+                            <table class="wow fadeInUp">
                                 <tr>
                                     <th colspan="2">Vrsta plastifikacije</th>
                                     <th>Cena po tabaku</th>

@@ -41,7 +41,7 @@
                 <h3 class="section-title">Naše Usluge</h3>
             </header>
 
-            <div class="row align-items-center" id="usluga1">
+            <div class="row align-items-center wow fadeInUp" id="usluga1">
                 <div class="col-md-5">
                     <img src="img/opisi/opisi01.jpg" alt="" width="100%">
                 </div>
@@ -54,7 +54,7 @@
             </div>
             <hr>
 
-            <div class="row align-items-center" id="usluga2">
+            <div class="row align-items-center wow fadeInUp" id="usluga2">
                 <div class="col-md-5 order-md-last">
                     <img src="img/opisi/opisi02.jpg" alt="" width="100%">
                 </div>
@@ -65,7 +65,7 @@
             </div>
             <hr>
 
-            <div class="row align-items-center" id="usluga3">
+            <div class="row align-items-center wow fadeInUp" id="usluga3">
                 <div class="col-md-5">
                     <img src="img/opisi/opisi03.jpg" alt="" width="100%">
                 </div>
@@ -76,7 +76,7 @@
             </div>
             <hr>
 
-            <div class="row align-items-center" id="usluga4">
+            <div class="row align-items-center wow fadeInUp" id="usluga4">
                 <div class="col-md-5 order-md-last">
                     <img src="img/opisi/opisi04.jpg" alt="" width="100%">
                 </div>
@@ -89,7 +89,7 @@
             </div>
             <hr>
 
-            <div class="row align-items-center" id="usluga5">
+            <div class="row align-items-center wow fadeInUp" id="usluga5">
                 <div class="col-md-5">
                     <img src="img/opisi/image1.jpg" alt="" width="100%" id="img">
                 </div>
