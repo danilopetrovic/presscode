@@ -62,6 +62,28 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
+                                    <span class="input-group-text">Štampa:</span>
+                                </div>
+                                <select class="custom-select">
+                                    <option value="0">Izaberite</option>
+                                    <option value="80" title="80 din">4/0 kolor jednostrano</option>
+                                    <option value="98" title="98 din">4/1 kolor/crno dvostrano</option>
+                                    <option value="116" title="116 din">4/4 kolor dvostrano</option>
+                                    <option value="23" title="23 din">1/0 crno jednostrano</option>
+                                    <option value="32" title="32 din">1/1 crno dvostrano</option>
+                                    <option value="1" title="1 din">1/0 CB - A4</option>
+                                    <option value="2" title="2 din">1/1 CB - A4</option>
+                                    <option value="2" title="2 din">1/0 CB - A3</option>
+                                    <option value="4" title="4 din">1/1 CB - A3</option>
+                                    <option value="3" title="3 din">1/0 CB - B4 3din???</option>
+                                    <option value="6" title="6 din">1/1 CB - B4 6din???</option>
+                                    <!--                                    <option value="4">Otisak od klijenta</option>-->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
                                     <span class="input-group-text">Vrsta papira:</span>
                                 </div>
                                 <select class="custom-select">
@@ -78,46 +100,6 @@
                                 </select>
                             </div>
                         </div>
-                        <!--<div class="col-md-6 col-lg-4">-->
-                        <!--    <select class="custom-select">-->
-                        <!--        <option value="0">Vrsta papira</option>-->
-                        <!--        <option value="1">80gr ofset</option>-->
-                        <!--        <option value="2">120gr ofset</option>-->
-                        <!--        <option value="3">150gr ofset</option>-->
-                        <!--        <option value="4">350gr ofset</option>-->
-                        <!--    </select>-->
-                        <!--</div>-->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">Štampa:</span>
-                                </div>
-                                <select class="custom-select">
-                                    <option value="0">Izaberite</option>
-                                    <option value="80" title="80 din">4/0 kolor jednostrano</option>
-                                    <option value="98" title="98 din">4/1 kolor/crno dvostrano</option>
-                                    <option value="116" title="116 din">4/4 kolor dvostrano</option>
-                                    <option value="23" title="23 din">1/0 crno jednostrano</option>
-                                    <option value="32" title="32 din">1/1 crno dvostrano</option>
-                                    <option value="1" title="1 din">1/0 CB - A4</option>
-                                    <option value="2" title="2 din">1/1 CB - A4</option>
-                                    <option value="2" title="2 din">1/0 CB - A3</option>
-                                    <option value="4" title="4 din">1/1 CB - A3</option>
-                                    <option value="3" title="3 din">1/0 CB - B4 3din???</option>
-                                    <option value="6" title="6 din">1/1 CB - B4 6din???</option>
-<!--                                    <option value="4">Otisak od klijenta</option>-->
-                                </select>
-                            </div>
-                        </div>
-                        <!--<div class="col-md-6 col-lg-4">-->
-                        <!--    <select class="custom-select">-->
-                        <!--        <option value="0">Štampa</option>-->
-                        <!--        <option value="1">crno-belo jednostrano</option>-->
-                        <!--        <option value="2">crno-belo dvostrano</option>-->
-                        <!--        <option value="3">kolor jednostrano</option>-->
-                        <!--        <option value="4">kolor dvostrano</option>-->
-                        <!--    </select>-->
-                        <!--</div>-->
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -132,13 +114,6 @@
                                 </select>
                             </div>
                         </div>
-                        <!--<div class="col-md-6 col-lg-4">-->
-                        <!--    <select class="custom-select">-->
-                        <!--        <option value="0">Plastifikacija</option>-->
-                        <!--        <option value="1">Sjaj</option>-->
-                        <!--        <option value="2">Mat</option>-->
-                        <!--    </select>-->
-                        <!--</div>-->
                         <div class="col-md-6 col-lg-4">
                             <div class="input-group">
                                 <div class="input-group-prepend">
@@ -174,12 +149,6 @@
                                 </select>
                             </div>
                         </div>
-                        <!--<div class="col-md-6 col-lg-4">-->
-                        <!--    <select class="custom-select" onchange="promenaTexta();" id="bigovanje">-->
-                        <!--        <option value="0">Savijanje/Bigovanje</option>-->
-                        <!--        <option value="2">Da</option>-->
-                        <!--    </select>-->
-                        <!--</div>-->
                         <div class="offset-md-1 col-md-10 offset-lg-2 col-lg-8">
                             <div class="input-group">
                                 <div class="input-group-prepend posebno">
@@ -191,11 +160,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class="col-sm-5 col-md-4 col-lg-5">-->
-                        <!--    <div class="input-group">-->
-                        <!--        <button class="btn btn-outline-info form-control" id="izracunaj" onclick="izracunajCenu()">Izračunaj</button>-->
-                        <!--    </div>-->
-                        <!--</div>-->
                     </div>
 
                     <div class="col-12 alert alert-info text-center wow fadeInRight" role="alert">
