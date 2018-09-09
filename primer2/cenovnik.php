@@ -41,10 +41,10 @@
                 <h3 class="section-title">Cenovnik</h3>
             </header>
 
-            <div class="row portfolio-container" id="tabeleCenovnici">
+            <div class="row" id="tabeleCenovnici">
                 <div id="kalkulator" class="container">
                     <div class="col-12 wow fadeInLeft">
-                        <h2>Kalkulator</h2>
+                        <h2>Kalkulator<span class="lead"></span></h2>
                     </div>
 
                     <div class="row  wow fadeInUp" style="border: 1px solid #ced4da; border-radius: 0.25em; padding: 0.2em 0 0.5em; margin: 0.1rem 0.1rem 0.8rem 0.1rem;">
@@ -77,7 +77,6 @@
                                     <option value="4" title="4 din">1/1 CB - A3</option>
                                     <option value="3" title="3 din">1/0 CB - B4 3din???</option>
                                     <option value="6" title="6 din">1/1 CB - B4 6din???</option>
-                                    <!--                                    <option value="4">Otisak od klijenta</option>-->
                                 </select>
                             </div>
                         </div>
@@ -96,7 +95,6 @@
                                     <option value="2" title="2 din">Ofsetni 80g</option>
                                     <option value="1" title="1 din">A3 Ofsetni</option>
                                     <option value="0.5" title="0.5 din">A4 Ofsetni</option>
-<!--                                    <option value="1">Papir od klijenta</option>-->
                                 </select>
                             </div>
                         </div>
@@ -165,15 +163,13 @@
                     <div class="col-12 alert alert-info text-center wow fadeInRight" role="alert">
                         <i class="fas fa-exclamation-circle"></i> Za detaljniji proračun cenе pozvati!
                     </div>
+                </div>
 
                     <?php include_once "cenovnikTabele.php" ?>
 
-                </div>
             </div>
         </div>
     </section><!-- #cenovnik -->
-
-    <div id="divRazdvajac" style="height: 1200px"></div>
 
     <?php include_once "subFooterKontakt.php" ?>
 
