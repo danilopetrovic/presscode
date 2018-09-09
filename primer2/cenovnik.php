@@ -30,7 +30,7 @@
     </div>
 </header><!-- #header -->
 
-<main id="main">
+<main id="main" style="background-color: #f7f7f7">
     <!--==========================
       CENOVNIK
     ============================-->
