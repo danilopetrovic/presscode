@@ -77,7 +77,7 @@
                         <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Grafički dizajn i priprema</h2>
+                                <h2 style="color: magenta;">Grafički dizajn i priprema</h2>
                                 <p></p>
                             </div>
                         </div>
