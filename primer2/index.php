@@ -57,8 +57,8 @@
                         <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>CTP osvetljavanje ploča</h2>
-                                <p>Sarađujemo sa 50 štamparija kojima osvetljavamo ofsetne ploče na 2 CTP uređaja visoke rezolucije sa brzinom od 80 ploča B2 formata na sat ili 40 ploča B1 formata. Zbog velikog broja štamparija kojima osvetljavamo ofsetne ploče sa kojih štampaju u mogućnosti smo da krajnjim klijentima organizujemo i završimo kompletnu štampu i isporučimo na željenu adresu.</p>
+<!--                                <h2>CTP osvetljavanje ploča</h2>-->
+<!--                                <p>Sarađujemo sa 50 štamparija kojima osvetljavamo ofsetne ploče na 2 CTP uređaja visoke rezolucije sa brzinom od 80 ploča B2 formata na sat ili 40 ploča B1 formata. Zbog velikog broja štamparija kojima osvetljavamo ofsetne ploče sa kojih štampaju u mogućnosti smo da krajnjim klijentima organizujemo i završimo kompletnu štampu i isporučimo na željenu adresu.</p>-->
                             </div>
                         </div>
                     </div>
@@ -67,8 +67,8 @@
                         <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Digitalna štampa</h2>
-                                <p>Takođe u našem studiju posedujemo visoko kvalitetnu digitalnu štampu za manje tiraže sa doradom tako da za jedan dan naš klijent može dobiti katalog, brošuru, vizit karte i ostali štampani materijal.</p>
+<!--                                <h2>Digitalna štampa</h2>-->
+<!--                                <p>Takođe u našem studiju posedujemo visoko kvalitetnu digitalnu štampu za manje tiraže sa doradom tako da za jedan dan naš klijent može dobiti katalog, brošuru, vizit karte i ostali štampani materijal.</p>-->
                             </div>
                         </div>
                     </div>
@@ -77,8 +77,8 @@
                         <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2 style="color: magenta;">Grafički dizajn i priprema</h2>
-                                <p></p>
+<!--                                <h2 style="color: magenta;">Grafički dizajn i priprema</h2>-->
+<!--                                <p></p>-->
                             </div>
                         </div>
                     </div>
@@ -87,8 +87,8 @@
                         <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
                         <div class="carousel-container">
                             <div class="carousel-content">
-                                <h2>Pro Photo i Video</h2>
-                                <p>Pružamo klijentu fotografsku uslugu visokog kvaliteta što je veoma bitna faza za izgled štampanog materijala, koji klijent treba da dobije radi boljeg plasmana svog proizvoda na tržištu. Naš studio može svojim klijentima pružiti mnogo različitih ponuda zbog velikog broja štamparija kojima radi uslugu osvetljavanja ofsetnih ploča sa različitim cenama i nivoima kvaliteta. Drugim rečima, sa nama preskačete sve faze do željene štampe.</p>
+<!--                                <h2>Pro Photo i Video</h2>-->
+<!--                                <p>Pružamo klijentu fotografsku uslugu visokog kvaliteta što je veoma bitna faza za izgled štampanog materijala, koji klijent treba da dobije radi boljeg plasmana svog proizvoda na tržištu. Naš studio može svojim klijentima pružiti mnogo različitih ponuda zbog velikog broja štamparija kojima radi uslugu osvetljavanja ofsetnih ploča sa različitim cenama i nivoima kvaliteta. Drugim rečima, sa nama preskačete sve faze do željene štampe.</p>-->
                             </div>
                         </div>
                     </div>
